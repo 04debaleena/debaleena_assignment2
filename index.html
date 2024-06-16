@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="logo.png">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+    <p id="intro">Tic-Tac-Toe is a thrilling blend of strategy and skill, where each X and O brings tension and excitement. Every move is a calculated risk, inching closer to victory or potential defeat. This simple grid game demands deep tactical thinking, making every match a unique battle of wits. Whether plotting your next move or blocking your opponent's, Tic-Tac-Toe turns even the simplest moment into a captivating showdown.<a href="#play"> CLICK HERE</a> to start.<b> PLAYER X</b> will start.</p>
+    <div id="play">
+        <h1>PLAY-BOARD</h1>
+        <div id="turn-indicator">Turn: <div id="current-player"></div></div>
+        <div id="tic-tac-toe-board" class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="reset-btn">Reset Game</button>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="content">
+                <p id="modal-text">Are you sure you want to reset the game?</p>
+                <button id="confirm-reset">Yes</button>
+            </div>
+        </div>
+    </div>
+    <div id="leaderboard">
+        <h1>Leaderboard</h1>
+        <p>Player X: <span id="score-x">0</span></p>
+        <p>Player O: <span id="score-o">0</span></p>
+    </div>
+    <button id="reset-leaderboard-btn">Reset Leaderboard</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
